@@ -1,0 +1,15 @@
+﻿@using System.Diagnostics.Tracing
+@model Student
+
+<h1>Student Details</h1>
+<hr />
+
+<div>
+	<div>Adi: @Model.FirstName</div>
+	<div>Soyadi: @Model.LastName</div>
+	<div>Yas: @Model.Age</div>
+	<div>
+		Yeni kayıt mı: @((Model.YeniKayitMi) ? "Evet" : "Hayır")
+	</div>
+	<div>Şifresi: @Model.Password</div>
+</div>
